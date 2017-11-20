@@ -1,0 +1,260 @@
+body {
+    margin: 0px;
+    font-family: 'Open Sans Condensed', sans-serif; 
+}
+
+h1 {
+    font-family: Oswald;
+    font-size: 70px;
+}
+
+h3 {
+    font-size: 32px;
+    line-height: 0px;
+    
+}
+
+p {
+   font-size: 24px; 
+}
+
+#header {
+    margin-top: 0px;
+    margin-left: 80px;
+    background-size: 700px 700px;
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 700px;
+
+}
+
+.hexagon {
+    background: url("../images/header.png");
+    background-repeat: no-repeat;
+    height: 800px;
+    width: 700px;
+    top: 0;
+    right: 0;
+    position: absolute;
+}
+
+.logo {
+    margin-top: 60px;
+}
+
+#intro {
+    background: url("../images/profile.png");
+    background-size: 550px 550px;
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 850px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.text {
+    margin-top: 200px;
+    margin-left: 600px;
+}
+
+#about{
+    background: url("../images/phone.png");
+    background-size: 600px 778px;
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 850px;
+}
+
+.copy {
+    margin-left: 80px;
+    margin-right: 600px;
+}
+
+.clear {
+    clear: both;
+}
+
+.features {
+    height: 800px;
+    background: url("../images/hex.png");
+    background-size: 600px 800px;
+    background-repeat: no-repeat;
+    margin-right: 80px;
+}
+
+.user {
+    height: 800px;
+    text-align: center;
+}
+
+.partners {
+    height: 650px;
+    text-align: center;
+}
+
+#slack {
+    padding-top: 20px;
+    padding-right: 70px;
+    height: 70px;
+}
+
+#evernote {
+    padding-top: 20px;
+    padding-right: 70px;
+    height: 80px;
+}
+
+#intercom {
+    padding-top: 40px;
+    height: 80px;
+}
+
+#dropbox {
+    padding-top: 50px;
+    padding-right: 100px;
+    height: 120px;
+}
+
+#twitter {
+    height: 50px;
+}
+
+.download {
+    padding-top: 100px;
+    text-align: center;
+    background: url("../images/downback.png");
+    background-size: 1300px 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    line-height: 0px;
+    height: 300px;
+}
+
+#button1 {
+    padding: 10px 50px 10px 50px;
+    border-radius: 50px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 24px;
+    border: none;  
+    background: #fffc00; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(18deg, #fffc00, #d8ff00); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(18deg, #fffc00, #d8ff00); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(18deg, #fffc00, #d8ff00); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(18deg, #fffc00, #d8ff00); /* Standard syntax */
+    cursor: pointer;
+}
+
+#button2 {
+    position: relative;
+    padding: 10px 50px 10px 50px;
+    margin: 25px 80px 0px 0px;
+    float: right;
+    width:auto;
+    border-radius: 50px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 24px;
+    border: none;  
+    background: #fffc00; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(-144deg, #fffc00, #d8ff00); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(-144deg, #fffc00, #d8ff00); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(-144deg, #fffc00, #d8ff00); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(-144deg, #fffc00, #d8ff00); /* Standard syntax */
+    cursor: pointer;
+}
+
+#button1:hover {
+    opacity: 0.8;
+}
+
+#button2:hover {
+    opacity: 0.8;
+}
+
+.apple {
+    background: url("../images/app.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 73px;
+    width: 200px;
+}
+
+.google {
+    background: url("../images/google.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 110px;
+    width: 280px;
+    border: none;
+}
+
+.facebook {
+    background: url("../images/facebook.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    margin-right: 8px;
+}
+
+.facebook:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.twitter {
+    background: url("../images/twitter.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    margin-right: 8px;
+}
+
+.twitter:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.instagram {
+    background: url("../images/instagram.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    margin-right: 100px;
+}
+
+.instagram:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+#social {
+    float: right;
+    margin-top: 25px;
+}
+
+footer {
+    background: black;
+    height: 200px;
+    text-align: center;
+    color: white;
+}
+
+#foot {
+    margin-left: 80px;
+    padding-top: 20px;
+    text-align: left;
+}
+
+.bottom {
+    height: 100px;
+    width: 300px;
+    background: url("../images/logo_white.png");
+    background-size: cover;
+    border: none;
+    cursor: pointer;
+}
