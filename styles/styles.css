@@ -44,7 +44,7 @@ p {
 
 #intro {
     background: url("../images/profile.png");
-    background-size: 550px 550px;
+    background-size: 650px 600px;
     background-repeat: no-repeat;
     background-position: left;
     height: 850px;
@@ -54,7 +54,8 @@ p {
 
 .text {
     margin-top: 200px;
-    margin-left: 600px;
+    margin-left: 700px;
+    float: left;
 }
 
 #about{
@@ -68,6 +69,7 @@ p {
 .copy {
     margin-left: 80px;
     margin-right: 600px;
+    float: left;
 }
 
 .clear {
@@ -82,10 +84,14 @@ p {
     margin-right: 80px;
 }
 
+
+
 .user {
-    height: 800px;
+    height: 1300px;
     text-align: center;
 }
+
+
 
 .partners {
     height: 650px;
@@ -257,4 +263,9 @@ footer {
     background-size: cover;
     border: none;
     cursor: pointer;
+}
+
+.mySlides {
+    box-shadow: 5px 5px 10px #888888;
+    margin: 20px;
 }
