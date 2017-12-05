@@ -56,6 +56,7 @@ p {
     margin-top: 200px;
     margin-left: 700px;
     float: left;
+    
 }
 
 #about{
@@ -87,7 +88,7 @@ p {
 
 
 .user {
-    height: 1300px;
+    height: 800px;
     text-align: center;
 }
 
@@ -100,13 +101,13 @@ p {
 
 #slack {
     padding-top: 20px;
-    padding-right: 70px;
+    padding-right: 80px;
     height: 70px;
 }
 
 #evernote {
     padding-top: 20px;
-    padding-right: 70px;
+    padding-right: 80px;
     height: 80px;
 }
 
@@ -117,7 +118,7 @@ p {
 
 #dropbox {
     padding-top: 50px;
-    padding-right: 100px;
+    padding-right: 120px;
     height: 120px;
 }
 
@@ -125,7 +126,7 @@ p {
     height: 50px;
 }
 
-.download {
+#download {
     padding-top: 100px;
     text-align: center;
     background: url("../images/downback.png");
@@ -182,15 +183,28 @@ p {
     background-repeat: no-repeat;
     height: 73px;
     width: 200px;
+    margin-right: 25px;
+    border-style: none;
 }
 
 .google {
     background: url("../images/google.png");
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
-    height: 110px;
-    width: 280px;
-    border: none;
+    height: 70px;
+    width: 242px;
+    margin-top: 50px;
+    border-style: none;
+}
+
+.apple:hover {
+    opacity: 0.95;
+    cursor: pointer;
+}
+
+.google:hover {
+    opacity: 0.95;
+    cursor: pointer;
 }
 
 .facebook {
@@ -201,6 +215,7 @@ p {
     width: 50px;
     border-radius: 50px;
     margin-right: 8px;
+    border-style: none;
 }
 
 .facebook:hover {
@@ -216,6 +231,7 @@ p {
     width: 50px;
     border-radius: 50px;
     margin-right: 8px;
+    border-style: none;
 }
 
 .twitter:hover {
@@ -231,6 +247,7 @@ p {
     width: 50px;
     border-radius: 50px;
     margin-right: 100px;
+    border-style: none;
 }
 
 .instagram:hover {
@@ -269,3 +286,125 @@ footer {
     box-shadow: 5px 5px 10px #888888;
     margin: 20px;
 }
+
+#img {
+    box-shadow: 20px;
+}
+
+.quoteblock1 {
+    float: left;
+
+}
+
+#q1 {
+    background: url("../images/q1.png");
+    background-size: 500px 550px;
+    background-repeat: no-repeat;
+    height: 500px;
+    margin-left: 475px;
+    margin-right: 475px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 25px;
+    text-align: left;
+    line-height: 50px;
+    box-shadow: 5px 5px 10px #888888;
+    float: left;
+    position: absolute;
+    
+}
+
+#q2 {
+    background: url("../images/q1.png");
+    background-size: 450px 450px;
+    background-repeat: no-repeat;
+    height: 450px;
+    margin-top: 20px;
+    margin-left: 75px;
+    margin-right: 875px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 25px;
+    text-align: left;
+    line-height: 50px;
+    box-shadow: 5px 5px 10px #888888;
+    float: left;
+    position: absolute;
+    z-index: -1;
+}
+
+#q3 {
+    background: url("../images/q1.png");
+    background-size: 450px 450px;
+    background-repeat: no-repeat;
+    height: 450px;
+    margin-top: 20px;
+    margin-left: 875px;
+    margin-right: 75px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 25px;
+    text-align: left;
+    line-height: 50px;
+    box-shadow: 5px 5px 10px #888888;
+    float: left;
+    position: absolute;
+    z-index: -1;
+}
+
+
+
+
+
+
+.item-1, .item-2, .item-3 {
+	position: absolute;
+    display: block;
+    width: 60%;
+    height: 800px;
+    margin-top: 150px;
+    margin-left: -225px;
+    padding-left: 500px;
+    font-size: 2em;
+	animation-duration: 30s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+.item-1{
+	animation-name: anim-1;
+    background: url("../images/feature.png");
+    background-repeat: no-repeat;
+}
+
+.item-2{
+	animation-name: anim-2;
+    background: url("../images/feature2.png");
+    background-repeat: no-repeat;
+    padding-left: 550px;
+}
+
+.item-3{
+	animation-name: anim-3;
+    background: url("../images/feature3.png");
+    background-repeat: no-repeat;
+}
+
+@keyframes anim-1 {
+	0%, 8.3% { left: -100%; opacity: 0; }
+    8.3%,25% { left: 25%; opacity: 1; }
+    33.33%, 100% { left: 110%; opacity: 0; }
+}
+
+@keyframes anim-2 {
+	0%, 33.33% { left: -100%; opacity: 0; }
+    41.63%, 58.29% { left: 25%; opacity: 1; }
+    66.66%, 100% { left: 110%; opacity: 0; }
+}
+
+@keyframes anim-3 {
+	0%, 66.66% { left: -100%; opacity: 0; }
+    74.96%, 91.62% { left: 25%; opacity: 1; }
+    100% { left: 110%; opacity: 0; }
+}
+
