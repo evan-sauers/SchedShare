@@ -2,27 +2,50 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SchedShare</title>
     <link href="styles/styles.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     
     <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
 
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("quote");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+            slideIndex = 1;
+        } 
+        if (n < 1) {
+            slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.transform = "scale(0.6)";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.transform= "none";
+        dots[slideIndex-1].className += " active";
+    }
     </script>
-   
-
 </head>
 <body>
     <div id="header">
         <div class="hexagon"></div>
         <div class="logo">
             <img src="images/logo.png" height="100px" width="300px">
-            <button id="button2" type="button">Download</button>
+            <button id="button2" type="button" onClick="document.getElementById('download').scrollIntoView()">Download</button>
             <div class="headings">
                 <h1>Sharing schedules<br>just got easier</h1>
                 <button id="button1" type="button" onClick="document.getElementById('intro').scrollIntoView()">Learn More</button>
@@ -52,13 +75,13 @@
         <div class="item-1">
             <h1>Personalized Touch</h1>
             <h3>Add events with a quick tap</h3>
-            <p>Create and add events with your own private calendar. Swipe through the days and months<br> and stay organized.</p>
+            <p>Create and add events with your own private calendar. Swipe through the days and <br>months and stay organized.</p>
         </div>
 
         <div class="item-2">
             <h1>Bee Together</h1>
             <h3>Share editable calendars</h3>
-            <p>Make shared calendars with others, where you can add, edit, and delete events. Everyone<br> can be connected.</p>
+            <p>Make shared calendars with others, where you can add, edit, and delete events. <br>Everyone can be connected.</p>
         </div>
 
         <div class="item-3">
@@ -69,30 +92,40 @@
     </div>
     
     <div class="user">
-        <h1>User Stories</h1>
-        <div class="quoteblock1">
-            <div id="q1">
-                <p>SchedShare allows me to share schedules with my friends and family. I can know when they will be home, at the coffee shop, or when they are available to hang out.</p>
-                <h2><b>-Aaron, 21</b></h2>
+        <h1>User Stories</h1>  
+        <div class="slideshow-container">
+            <div class="quote fade">
+                <div class="quoteblock1">
+                    <div id="q2">
+                        <p>I am a traveler, so I am on the go a lot! I love SchedShare because I can keep in touch with my family and know when we have family gatherings.</p>
+                        <h2 class="tab"><br><b>-Stephanie, 37</b></h2>
+                    </div>
+                </div>
             </div>
-            
-            
+
+            <div class="quote fade">
+                <div class="quoteblock1">
+                    <div id="q1">
+                        <br><p>SchedShare allows me to share schedules with my friends and family. I can know when they will be home, at the coffee shop, or when they are available to hang out.</p>
+                        <h2 class="tab"><br><b>-Aaron, 21</b></h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="quote fade">
+                <div class="quoteblock1">
+                    <div id="q3">
+                        <p>My family always is on the go, whether it is with band practice or football games, so we have a shared schedule with SchedShare, where we can all add events to our family calendar.</p>
+                        <h2 class="tab"><b>-Bridget, 42</b></h2>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="quoteblock1">
-            <div id="q2">
-                <p>I am a traveler, so I am on the go a lot! I love SchedShare because I can keep in touch with my family and know when we have family gatherings.</p>
-                <h2><b>-Stephanie, 37</b></h2>
-            </div>
-            
-            
-        </div>
-        <div class="quoteblock1">
-            <div id="q3">
-                <p>My family always is on the go, whether it is with band practice or football games, so we have a shared schedule with SchedShare, where we can all add events to our family calendar.</p>
-                <h2><b>-Bridget, 42</b></h2>
-            </div>
-            
-            
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
         </div>
     </div>
      
@@ -107,9 +140,14 @@
     
     <div id="download">
         <h1>Download Now</h1>
-        <input class="apple" type="button">
-        <input class="google" type="button">
+        <a href="http://apple.com">
+            <input class="apple" type="button">
+        </a>
+        <a href="https://play.google.com/store?hl=en">
+            <input class="google" type="button">
+        </a>
     </div>
+    
     <footer>
         <div id="foot">
             <input class="bottom" type="button" onClick="document.getElementById('header').scrollIntoView()">
